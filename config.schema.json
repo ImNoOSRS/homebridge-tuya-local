@@ -259,9 +259,13 @@
                 "items": {
                   "type": "object",
                   "properties": {
+                    "displayName": {
+                      "type": "string",
+                      "title": "Display name"
+                    },
                     "name": {
                       "type": "string",
-                      "title": "Effect name"
+                      "title": "Legacy name (optional, deprecated)"
                     },
                     "id": {
                       "type": "integer",
