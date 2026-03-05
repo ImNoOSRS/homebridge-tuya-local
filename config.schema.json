@@ -267,6 +267,12 @@
                       "type": "integer",
                       "title": "WLED effect ID",
                       "placeholder": 0
+                    },
+                    "staticColor": {
+                      "type": "string",
+                      "title": "Static color (hex RRGGBB, optional)",
+                      "description": "If set, this preset will also force a static color on WLED (e.g. #ffffff for white, #00ff00 for green). Leave empty to use the effect's own color.",
+                      "placeholder": "#ffffff"
                     }
                   }
                 },
