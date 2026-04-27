@@ -252,34 +252,6 @@
                   "functionBody": "return model.devices && model.devices[arrayIndices] && ['SimpleDimmer'].includes(model.devices[arrayIndices].type);"
                 }
               },
-              "presetEffects": {
-                "type": "array",
-                "orderable": false,
-                "description": "Optional list of WLED effect presets. Each entry creates a separate switch in HomeKit that, when turned on, sets the configured effect on your WLED controller.",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "name": {
-                      "type": "string",
-                      "title": "Effect name"
-                    },
-                    "id": {
-                      "type": "integer",
-                      "title": "WLED effect ID",
-                      "placeholder": 0
-                    },
-                    "staticColor": {
-                      "type": "string",
-                      "title": "Static color (hex RRGGBB, optional)",
-                      "description": "If set, this preset will also force a static color on WLED (e.g. #ffffff for white, #00ff00 for green). Leave empty to use the effect's own color.",
-                      "placeholder": "#ffffff"
-                    }
-                  }
-                },
-                "condition": {
-                  "functionBody": "return model.devices && model.devices[arrayIndices] && ['SimpleDimmer'].includes(model.devices[arrayIndices].type);"
-                }
-              },
               "dpColorTemperature": {
                 "type": "integer",
                 "condition": {
